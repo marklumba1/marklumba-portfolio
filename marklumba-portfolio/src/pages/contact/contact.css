@@ -1,0 +1,21 @@
+.contact-container{
+    @apply min-h-[600px] lg:min-h-[100vh] grid place-items-center
+}
+.contact-container .contact-inner{
+    @apply max-w-[600px] flex flex-col gap-6 items-center
+}
+.contact-container .contact-inner h1{
+    @apply font-mono text-[var(--py)] text-[clamp(30px,4vw,40px)]
+}
+.contact-container .contact-inner h2{
+    @apply font-bold text-5xl
+}
+.contact-container .contact-inner{
+    @apply text-center
+}
+.socials ul{
+    @apply grid grid-cols-3 gap-3 
+}
+.socials ul li:hover{
+    @apply cursor-pointer scale-[1.2] transition-transform bg-red-900 rounded text-[bg-red-900]
+}

@@ -1,0 +1,8 @@
+.heading-container{
+    @apply pb-[40px] font-mono text-[clamp(30px,4vw,40px)] 
+}
+
+.heading-container div{
+    @apply w-[100%] border-b border-red-900 border-[3px] border-[dashed] flex justify-end
+}
+

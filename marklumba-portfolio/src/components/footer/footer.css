@@ -1,0 +1,9 @@
+.footer-container{
+    @apply flex justify-center items-center flex-col p-2  font-mono 
+}
+.footer-container *{
+    @apply  text-[13px]
+}
+.footer-container a:hover{
+    @apply underline
+}

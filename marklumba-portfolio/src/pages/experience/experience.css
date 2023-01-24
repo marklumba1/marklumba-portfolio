@@ -1,0 +1,25 @@
+.experience-container{
+    @apply py-[50px] lg:py-[100px]
+}
+.inner-experience{
+    @apply grid grid-cols-1 lg:grid-cols-5
+}
+.inner-experience .tabs{
+    @apply flex lg:flex-col lg:row-span-2 lg:col-span-1
+    lg:p-3 overflow-x-scroll overflow-auto
+}
+.inner-experience .tabs::-webkit-scrollbar{
+    @apply h-[8px]
+}
+.tab-content{
+    @apply col-span-4 
+}
+
+
+.inner-experience .tabs button{
+    @apply w-[100%] border-0 border-b-2 rounded-none lg:border-b-0 lg:border-l-2
+}
+
+.inner-experience .tabs button:hover{
+    @apply text-[var(--py)]
+}

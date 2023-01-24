@@ -1,0 +1,57 @@
+.built-projects-container{
+    @apply  grid grid-cols-1 lg:grid-cols-12 py-10 place-items-center
+}
+.built-projects-container .project-image{
+    @apply  row-start-1 col-start-1 row-end-1 col-end-1 lg:col-span-7 lg:col-start-1;
+}
+
+.built-projects-container .pi-reverse{
+    @apply lg:col-start-6;
+}
+
+.built-projects-container .project-description{
+    @apply row-start-1 col-start-1 row-end-1 col-end-1 lg:col-span-7 lg:col-start-6
+    text-right h-[100%] flex bg-slate-900 lg:bg-black bg-opacity-[0.8] lg:bg-opacity-[0.3] rounded
+}
+.built-projects-container .pd-reverse{
+    @apply lg:col-start-1 lg:text-left
+}
+
+
+
+.description-container{
+    @apply  flex flex-col gap-3 p-5 w-[100%] z-10 border rounded lg:border-none
+}
+.project-description .featured{
+    @apply font-medium font-mono text-[var(--py)]
+}
+.project-description .project-title{
+    @apply text-[clamp(30px,3vw,50px)] font-bold leading-tight
+}
+.project-description .project-summary{
+    @apply rounded p-2 bg-amber-200 bg-opacity-[0.1]  z-10
+}
+.project-description .language-used{
+    @apply flex flex-col lg:flex-row justify-end lg:gap-10 font-mono
+}
+.project-description .lu-reverse{
+    @apply justify-start
+}
+
+
+.project-image .img-container{
+    @apply rounded relative z-[-1]
+}
+.project-image .img-container .overlay{
+    @apply rounded bg-[var(--py)] opacity-30 absolute top-0 left-0 z-10 h-[100%] w-[100%]
+}
+.project-image:hover .img-container .overlay{
+    @apply opacity-0 transition-opacity
+}
+.project-image:hover .img-container{
+    @apply transition-transform scale-[1.2]
+}
+.project-image .img-container img{
+    @apply w-[100%] h-[auto] rounded
+}
+

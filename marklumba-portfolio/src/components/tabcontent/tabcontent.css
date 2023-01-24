@@ -1,0 +1,17 @@
+.tab-content{
+    @apply p-4
+}
+
+.tab-content h1, .tab-content span {
+    @apply text-xl
+}
+ .tab-content h2 {
+    @apply text-lg font-mono
+}
+
+.active-tab{
+    @apply border-b-[var(--py)] lg:border-b-0 lg:border-l-2 lg:border-l-[var(--py)] duration-100
+}
+.inactive-tab{
+    @apply border-b-slate-400 text-slate-400 lg:border-b-0 lg:border-l-2 lg:border-l-slate-400 duration-100
+}

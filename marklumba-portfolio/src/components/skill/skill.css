@@ -1,0 +1,9 @@
+.skill-container{
+    @apply p-2 w-[fit-content] flex flex-col items-center font-mono
+}
+.skill-container:hover div{
+    @apply -translate-y-3 transition-transform
+}
+.skill-container *{
+    @apply my-1
+}

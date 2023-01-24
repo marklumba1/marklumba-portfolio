@@ -1,0 +1,32 @@
+.about-container{
+    @apply py-[50px] lg:py-[100px] 
+}
+.inner-about{
+    @apply grid grid-cols-1 lg:grid-cols-5 gap-10
+}
+.about{
+    @apply lg:col-span-3
+}
+.image-container{
+    @apply lg:col-span-2 grid place-items-center lg:block 
+}
+
+.image-container .img{
+    @apply w-[100%] h-auto max-h-[350px] max-w-[350px] relative
+}
+.image-container .img img{
+    @apply rounded
+}
+.image-container .img .border-img{
+    @apply w-[100%] h-[100%] border-[var(--py)] border-2 rounded absolute bottom-[-12px] right-[-12px];
+    z-index: -1;
+}
+.image-container .img:hover .border-img{
+    animation:image-animation 0.3s ease-in forwards;
+}
+
+@keyframes image-animation {
+    to{
+        transform: translate(-5px, -5px);
+    }
+}

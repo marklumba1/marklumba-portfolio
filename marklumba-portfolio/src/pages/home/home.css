@@ -1,0 +1,26 @@
+.home-container{
+    @apply flex justify-center items-center pt-[100px] h-[calc(100vh)]
+}
+.hero{
+    @apply flex flex-col gap-5
+}
+.header-small{
+    @apply font-medium font-mono text-[18px] text-[var(--py)]
+}
+.header-big{
+    @apply  font-bold text-[clamp(40px,8vw,80px)] leading-[1]
+}
+.header-secondary, .header-secondary span{
+    @apply  font-bold text-[clamp(30px,4vw,60px)] leading-[1]
+}
+
+.header-bottom{
+    @apply lg:max-w-[70%]
+}
+.header-big span{
+    @apply font-mono text-[var(--py)]
+}
+
+.span-company{
+    @apply text-[var(--py)]
+}

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --navbarheight: 100px;
+    --py: #FBF8BE;
+}
+::-webkit-scrollbar {
+    @apply w-[5px] lg:w-[10px]
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-800
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-700 rounded
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[var(--py)]
+  }
+*{
+    @apply m-0 p-0 text-white text-[16px]
+}
+body{
+    @apply bg-slate-900
+}
+html{
+    @apply scroll-smooth
+}
+.content{
+    @apply relative max-h-[100vh]
+}
+.page-container{
+    @apply flex justify-center items-center;
+}
+.pages{
+    @apply max-w-[1300px] px-[100px]
+}
+button{
+    @apply border px-4 py-2 text-sm rounded font-mono text-[var(--py)] border-[var(--py)]
+}
+button:hover{
+    @apply  bg-slate-100 bg-opacity-5
+}
+.text-green{
+    @apply text-green-400
+}
